@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: hello-k8s
-          image: tmogdans/hello-k8s
-          imagePullPolicy: Never
+          image: ghcr.io/tmogdans/hello-k8s:v0.0.2
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
-      restartPolicy: Never
+      restartPolicy: Always
